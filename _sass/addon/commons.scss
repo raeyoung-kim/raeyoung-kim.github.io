@@ -607,7 +607,7 @@ img[data-src] {
 
 .input-focus {
   box-shadow: none;
-  border-color: var(--input-focus-border-color) !important;
+  border-color: black !important;
   background: center !important;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -667,7 +667,7 @@ $sidebar-display: "sidebar-display";
       width: 6rem;
       height: 6rem;
       border-radius: 50%;
-      border: 2px solid rgba(222, 222, 222, 0.7);
+      border: 2px solid #ffff;
       overflow: hidden;
       transform: translateZ(0); // fixed the zoom in Safari
       -webkit-transition: border-color 0.35s ease-in-out;
@@ -675,7 +675,7 @@ $sidebar-display: "sidebar-display";
       transition: border-color 0.35s ease-in-out;
 
       &:hover {
-        border-color: white;
+        border-color: #ffff;
       }
     }
 
@@ -702,7 +702,7 @@ $sidebar-display: "sidebar-display";
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
-      color: rgba(134, 133, 133, 99%);
+      color: #ffff;
     }
   }
 
@@ -885,7 +885,7 @@ $sidebar-display: "sidebar-display";
   right: 0;
   transition: top 0.2s ease-in-out;
   z-index: 50;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  border-bottom: 1px solid #121212;
   background-color: var(--topbar-wrapper-bg);
 
   [data-topbar-visible=false] & {
@@ -895,13 +895,17 @@ $sidebar-display: "sidebar-display";
 
 #topbar {
   i { // icons
-    color: #999;
+    color: black;
   }
 
   #breadcrumb {
     font-size: 1rem;
-    color: gray;
+    color: #121212;
     padding-left: 0.5rem;
+
+    a {
+      color: #121212;
+    }
 
     a:hover {
       @extend %link-hover;
@@ -927,7 +931,7 @@ $sidebar-display: "sidebar-display";
   display: flex;
   width: 85%;
   border-radius: 1rem;
-  border: 1px solid var(--search-wrapper-border-color);
+  border: 1px solid black;
   background: var(--search-wrapper-bg);
   padding: 0 0.5rem;
 
@@ -945,7 +949,7 @@ $sidebar-display: "sidebar-display";
 }
 
 #search-cancel { /* 'Cancel' link */
-  color: var(--link-color);
+  color: black;
   margin-left: 1rem;
   display: none;
 
@@ -1681,7 +1685,7 @@ $sidebar-display: "sidebar-display";
       }
 
       i {
-        background-color: var(--sidebar-btn-bg);
+        background-color: transparent;
         font-size: 1rem;
         width: $icon-block-size;
         height: $icon-block-size;
