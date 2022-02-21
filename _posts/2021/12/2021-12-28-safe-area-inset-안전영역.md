@@ -23,13 +23,10 @@ mermaid: true
 ---
 - `_app.tsx` 파일에 뷰포트 메타태그에서 viewport-fit=cover를 추가한다.
 
-```typescript
-...
+```tsx
 import Head from 'next/head';
-...
 
 function MyApp({ Component, pageProps }: AppProps) {
-  ...
   return (
     <>
       <Head>
@@ -38,12 +35,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover"
         />
       </Head>
-      ...
     </>
   );
 }
 export default MyApp;
-
 ```
 
 - `style.css` 해당 셀렉터에 아래와 같이 safe-area-inset를 적용한다. (constant 및 env 값을 둘 다 추가해야 IOS 구버전, 신버전 대응이 가능하다.)

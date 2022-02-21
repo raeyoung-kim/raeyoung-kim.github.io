@@ -14,14 +14,12 @@ mermaid: true
 #   height: 500
 ---
 
----
-
 react만 사용해도 애플리케이션을 개발할 수 있다. 
 하지만, 규모가 커지고 구조가 복잡해질수록 컴포넌트의 상태(state) prop으로 넘겨주고 관리하는 일이 귀찮아진다.  리액트로 상태를 관리하면 부모 자식 관계처럼 위에서 아래로 또는 아래에서 위로 상태(state)를 props로 넘겨주어야 한다. 하지만 아래 그림과 같이 redux를 사용하게 되면 위아래로 상태 값을 넘겨주지 않고도 상태 값들을 저장하고 받아올 수 있다.
 
 ![](https://images.velog.io/images/760kry/post/5c1062c1-f3f2-4d70-aea8-b65c44489402/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a3837644a35454233796444375f4162684b6234554f512e706e67.png)
 
-[출처]([https://github.com/dooboolab/react-native-training/blob/master/react-native-global-state.md](https://github.com/dooboolab/react-native-training/blob/master/react-native-global-state.md))
+[출처](https://github.com/dooboolab/react-native-training/blob/master/react-native-global-state.md)
 
 ### install
 - redux와 react와 연결해 줄 react-redux를 설치한다.
@@ -164,8 +162,7 @@ const store = createStore(reducer, initialState)
 
 redux는 상태 관리에 효율적이지만 리덕스 상태 앱을 종료하거나 브라우저를 새로 고침만 해도 저장되어 있던 모든 상태들이 없어진다. Redux Persist 라이브러리를 사용하면 마치 캐시 기능과 같이 상태 값을 지속적으로 저장한다.
 
-- 참고자료
-    - [https://github.com/rt2zz/redux-persist#storage-engines](https://github.com/rt2zz/redux-persist#storage-engines)
+- [참고자료](https://github.com/rt2zz/redux-persist#storage-engines)
 
 - install
 
@@ -178,11 +175,11 @@ npm install redux-persist
 ```jsx
 import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
-**import { persistReducer } from 'redux-persist';**
-**import storage from 'redux-persist/lib/storage';**
+import { persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 import reducers from '../reducers';
 
-**const persistConfig = {
+const persistConfig = {
   key: 'root',
   storage
 };
