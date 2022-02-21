@@ -3,7 +3,7 @@ title: react-native-codepush 배포하기
 author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
-date: 2020-09-13
+date: 2020-09-21
 categories: [React Native, react-native-codepush]
 tags: [react-native, react-native-codepush]
 math: true
@@ -14,22 +14,12 @@ mermaid: true
 #   height: 500
 ---
 
----
-## 참고
-- [코드푸시 셋팅하기 1 ](https://medium.com/@gale.lee/react-native-code-push-1-167168b4af3f)
-- [코드푸시 셋팅하기 2](https://medium.com/@gale.lee/react-native-code-push-3-237b8c4360d7)
-- https://github.com/kjk7034/ReactNativeStudy/blob/master/docs/CodePush.md
-- https://github.com/microsoft/react-native-code-push/blob/master/docs/api-js.md
-- [https://romeoh.tistory.com/entry/Codepush-배포하기-Appcenter-deployment](https://romeoh.tistory.com/entry/Codepush-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0-Appcenter-deployment)
-- [https://stackoverflow.com/questions/52966421/ios-react-native-app-does-not-update-from-codepush-server](https://stackoverflow.com/questions/52966421/ios-react-native-app-does-not-update-from-codepush-server)
----
-
-앱 업데이트를 할 때 각 스토어의 심사를 받아야 하기 때문에 최소 하루 이상 시간이 소요된다. Microsoft에서 서비스하고 있는 Code Push를 사용하면 스토어의 심사를 받지 않고 빠르게 앱을 업데이트할 수 있다.
+앱 업데이트를 할 때 각 스토어의 심사를 받아야 하기 때문에 최소 하루 이상 시간이 소요된다. 
+Microsoft에서 서비스하고 있는 Code Push를 사용하면 스토어의 심사를 받지 않고 빠르게 앱을 업데이트할 수 있다.
 하지만 일부 기능이 추가되어 빌드를 해야 하는 경우를 제외한다.
 간단하게 javascript 나 스타일같이 간단한 수정을 했을 때 바로 적용할 수 있다.
 
 ## setUp
-
 ---
 
 ```bash
@@ -68,10 +58,9 @@ Deployment Key 확인하려면 아래 명령어를 실행한다.
     ```
 
 ## ios 설정
-
 ---
 
-- [ios setUp]([https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-ios.md](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-ios.md))
+- [ios setUp](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-ios.md)
 
 - Add App Center install
 
@@ -123,9 +112,7 @@ CodePushDeploymentKey에 CodePush에서 받은 Staging Deployment Key을 입력�
 ## android 설정
 
 ---
-
-- [안드로이드 setUp]([https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md))
-
+- [안드로이드 setUp](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md)
 
 - Add App Center install.
 
@@ -143,7 +130,7 @@ CodePushDeploymentKey에 CodePush에서 받은 Staging Deployment Key을 입력�
 
 - `android/settings.gradle` 파일에 아래 소스를 추가한다.
 
-    ```csharp
+    ```gradle
     include ':app', ':react-native-code-push'
     project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
     ```
@@ -151,7 +138,7 @@ CodePushDeploymentKey에 CodePush에서 받은 Staging Deployment Key을 입력�
 - `android/app/build.gradle` 파일 가장 아래에 아래 소스를 추가한다.
 (Cannot add task ‘bundleDebugJsAndAssets’ as a task with that name already exists. 에러가 발생하면 이미 같은 작업의 이름이 있다는 것. 파일을 확인한 후 중복되어 있는  (예: apply from: “../../node_modules/react-native/react.gradle”) 부분을 제거한다.
 
-```xml
+```gradle
     apply from: "../../node_modules/react-native/react.gradle"
     apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 ```
@@ -177,10 +164,10 @@ ReactNativeHost 설정에 getJSBundleFile() 추가한다.
     </resources>
 ```
 
-- [multi-deployment-testing-android]([https://github.com/Fetching-LTD/react-native-code-push/blob/master/docs/multi-deployment-testing-android.md](https://github.com/Fetching-LTD/react-native-code-push/blob/master/docs/multi-deployment-testing-android.md))
+- [multi-deployment-testing-android](https://github.com/Fetching-LTD/react-native-code-push/blob/master/docs/multi-deployment-testing-android.md)
 - `android/app/build.gradle` 에 아래 소스를 추가하고 `android/app/src/main/res/values/strings.xml` 파일에 CodePushDeploymentKey를 삭제한다.
 
-```bash
+```gradle
     android {
         ...
         buildTypes {
@@ -214,7 +201,7 @@ ReactNativeHost 설정에 getJSBundleFile() 추가한다.
 ## code-push 업데이트
 ---
 
-- [앱 센터]([https://appcenter.ms/apps](https://appcenter.ms/apps))
+- [앱 센터](https://appcenter.ms/apps)
 
 ```bash
 code-push release-react <appName> <platform> -d Staging [or Production]

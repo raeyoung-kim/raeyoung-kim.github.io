@@ -26,7 +26,7 @@ mermaid: true
 
 
 
-- [react-native-fresco]([https://github.com/clytras/react-native-fresco#readme](https://github.com/clytras/react-native-fresco#readme))
+- [react-native-fresco](https://github.com/clytras/react-native-fresco#readme)
 
 3. react-native-fast-image 이미지를 사용한다.
 

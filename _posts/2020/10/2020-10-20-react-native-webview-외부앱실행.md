@@ -91,7 +91,7 @@ npx react-native link react-native-send-intent
   ---
 
   - `AppDelegate.m` 파일에 아래의 소스를 추가한다.
-    - [참고 문서]([https://doc.ebichu.cc/react-native/releases/0.26/docs/linking.html](https://doc.ebichu.cc/react-native/releases/0.26/docs/linking.html))
+    - [참고 문서](https://doc.ebichu.cc/react-native/releases/0.26/docs/linking.html)
 
 ```
     - (BOOL)application:(UIApplication *)application
@@ -180,8 +180,8 @@ npx react-native link react-native-send-intent
 
 RN 웹뷰 내에서 onShouldStartLoadWithRequest 메소드를 이용해서 url이 바뀔 때마다 감지해서 http, https 외의 외부 앱 호출일 경우 android 경우 react-native-send-intent 등 외부 라이브러리를 이용해 intent를 호출하고 ios의 경우 Linking.openUrl을 사용해 intent를 호출한다.
 
-- [originWhitelist 참고문서]([https://reactnative.dev/docs/webview#originwhitelist](https://reactnative.dev/docs/webview#originwhitelist))
-- [onShouldStartLoadWithRequest 참고 문서]([https://reactnative.dev/docs/webview#onshouldstartloadwithrequest](https://reactnative.dev/docs/webview#onshouldstartloadwithrequest))
+- [originWhitelist 참고문서](https://reactnative.dev/docs/webview#originwhitelist)
+- [onShouldStartLoadWithRequest 참고 문서](https://reactnative.dev/docs/webview#onshouldstartloadwithrequest)
 - `originWhitelist={['*']}` 를 넣고 `onShouldStartLoadWithRequest` 로 핸들링한다.
 
 ```jsx
