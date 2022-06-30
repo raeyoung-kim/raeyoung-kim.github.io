@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2020-06-19
-categories: [Redux]
+categories: [Frontend]
 tags: [Redux]
 math: true
 mermaid: true

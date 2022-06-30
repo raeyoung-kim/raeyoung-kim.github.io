@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2020-09-21
-categories: [React Native, react-native-codepush]
+categories: [React Native]
 tags: [react-native, react-native-codepush]
 math: true
 mermaid: true

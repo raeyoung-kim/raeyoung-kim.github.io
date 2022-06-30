@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2022-03-21
-categories: [Typescript, Node]
+categories: [Backend]
 tags: [typescript + express.js + node.js 세팅, typescript node express]
 math: true
 mermaid: true

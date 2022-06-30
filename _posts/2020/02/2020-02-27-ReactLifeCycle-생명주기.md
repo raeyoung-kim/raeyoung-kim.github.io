@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2020-02-27
-categories: [React]
+categories: [Frontend]
 tags: [React, LifeCycle]
 math: true
 mermaid: true

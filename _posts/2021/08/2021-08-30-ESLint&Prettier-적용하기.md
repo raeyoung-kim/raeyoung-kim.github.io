@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2021-08-30
-categories: [Webpack]
+categories: [Frontend]
 tags: [ESLint & Prettier, ESLint & Prettier 적용하기]
 math: true
 mermaid: true

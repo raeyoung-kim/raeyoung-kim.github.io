@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2020-10-20
-categories: [React Native, react-native-webview]
+categories: [React Native]
 tags: [react-native-webview 외부 앱 실행(pg)]
 math: true
 mermaid: true

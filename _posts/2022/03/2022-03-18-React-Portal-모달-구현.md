@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2022-03-18
-categories: [React]
+categories: [Frontend]
 tags: [react portal 모달]
 math: true
 mermaid: true

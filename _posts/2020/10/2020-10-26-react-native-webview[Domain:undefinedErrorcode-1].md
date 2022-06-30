@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2020-10-26
-categories: [React Native, react-native-webview]
+categories: [React Native]
 tags: [react native domain error]
 math: true
 mermaid: true

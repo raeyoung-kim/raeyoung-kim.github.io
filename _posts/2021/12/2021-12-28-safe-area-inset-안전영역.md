@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2021-12-28
-categories: [CSS]
+categories: [Frontend]
 tags: [safe-area-inset]
 math: true
 mermaid: true

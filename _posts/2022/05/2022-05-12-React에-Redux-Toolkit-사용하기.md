@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2022-05-12
-categories: [React, Redux]
+categories: [Frontend]
 tags: [react @reduxjs/toolkit, redux toolkit, '@reduxjs/toolkit']
 math: true
 mermaid: true

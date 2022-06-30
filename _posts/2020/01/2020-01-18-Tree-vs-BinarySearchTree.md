@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2020-01-18
-categories: [Javascript, data structure ]
+categories: [Data Structure]
 tags: [data structure, Tree vs Binary Search Tree ]
 math: true
 mermaid: true

@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2022-03-14
-categories: [React]
+categories: [Frontend]
 tags: [react 이미지 슬라이드 구현, Image Slider 구현]
 math: true
 mermaid: true

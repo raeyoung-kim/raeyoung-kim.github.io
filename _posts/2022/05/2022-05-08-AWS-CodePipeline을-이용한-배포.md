@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2022-05-08
-categories: [AWS]
+categories: [Backend]
 tags: [codepipeline, codepipeline node ts]
 math: true
 mermaid: true

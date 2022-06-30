@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2020-04-30
-categories: [Side Project, 배포 과정]
+categories: [CS]
 tags: [netlify, AWS Elastic Beanstalk]
 math: true
 mermaid: true

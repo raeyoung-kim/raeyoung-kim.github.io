@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2019-11-19
-categories: [CSS]
+categories: [Frontend]
 tags: [css layout]
 math: true
 mermaid: true

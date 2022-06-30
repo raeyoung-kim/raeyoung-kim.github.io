@@ -4,7 +4,7 @@ author:
   name: kim rae young
   link: https://github.com/raeyoung-kim
 date: 2022-02-21
-categories: [Next.js]
+categories: [Frontend]
 tags: [Next.js & Typescript 세팅,]
 math: true
 mermaid: true
